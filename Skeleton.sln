@@ -5,11 +5,11 @@ VisualStudioVersion = 15.0.28307.779
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassLibrary", "ClassLibrary\ClassLibrary.csproj", "{E8BB51CE-8325-4BD3-BDFA-B013EEB87B2A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "testingStock", "Testing1\testingStock.csproj", "{44D57572-AEE2-41BA-8F8B-44A0C7B08818}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "testingStock", "testingStock\testingStock.csproj", "{44D57572-AEE2-41BA-8F8B-44A0C7B08818}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "testingOrder", "Testing2\testingOrder.csproj", "{78AF0CA5-71B3-4959-9E05-A64ED523FFA3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "testingOrder", "testingOrder\testingOrder.csproj", "{78AF0CA5-71B3-4959-9E05-A64ED523FFA3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "testingAccount", "Testing3\testingAccount.csproj", "{CDEAB9D5-740F-43A5-953F-FC14371EFFAC}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "testingAccount", "testingAccount\testingAccount.csproj", "{CDEAB9D5-740F-43A5-953F-FC14371EFFAC}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Testing6", "Testing6\Testing6.csproj", "{288EB452-7B75-4934-B0BB-07415B6A81FE}"
 EndProject
