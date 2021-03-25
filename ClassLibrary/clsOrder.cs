@@ -9,7 +9,7 @@ namespace ClassLibrary
         public decimal Price { get; set; }
         public DateTime OrderDate { get; set; }
         public string BookTitle { get; set; }
-        public int OrderLine { get; set; }
+        public string OrderLine { get; set; }
         public int OrderID { get; set; }
     }
 }
