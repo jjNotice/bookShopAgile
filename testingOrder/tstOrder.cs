@@ -93,7 +93,7 @@ namespace testingOrder
             //create an intance of the class we want to create
             clsOrder AnOrder = new clsOrder();
             //create some test to assign to the property
-            Int32 TestData = 2233011;
+            String TestData = "2233011";
             //assign the data to the property
             AnOrder.OrderLine = TestData;
             //test to see that the two values are the same
