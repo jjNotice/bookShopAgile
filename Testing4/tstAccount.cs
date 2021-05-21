@@ -216,7 +216,7 @@ namespace Testing4
         {
             clsAccount aAccount = new clsAccount();
             Boolean Found = false;
-            Int32 CustID = 1;
+            Int32 CustID = 2;
             Found = aAccount.Find(CustID);
             Assert.IsTrue(Found);
         }
@@ -227,9 +227,9 @@ namespace Testing4
             clsAccount aAccount = new clsAccount();
             Boolean Found = false;
             Boolean OK = true;
-            Int32 CustID = 1;
+            Int32 CustID = 2;
             Found = aAccount.Find(CustID);
-            if (aAccount.CustID != 1)
+            if (aAccount.CustID != 2)
             {
                 OK = false;
             }
@@ -242,9 +242,9 @@ namespace Testing4
             clsAccount aAccount = new clsAccount();
             Boolean Found = false;
             Boolean OK = true;
-            Int32 CustID = 1;
+            Int32 CustID = 2;
             Found = aAccount.Find(CustID);
-            if (aAccount.JoinDate != Convert.ToDateTime("1995-07-15"))
+            if (aAccount.JoinDate != Convert.ToDateTime("2011-01-01"))
             {
                 OK = false;
             }
@@ -266,9 +266,9 @@ namespace Testing4
             clsAccount aAccount = new clsAccount();
             Boolean Found = false;
             Boolean OK = true;
-            Int32 CustID = 1;
+            Int32 CustID = 2;
             Found = aAccount.Find(CustID);
-            if (aAccount.CustPhone != 01234567899)
+            if (aAccount.CustPhone != 0791231231)
             {
                 OK = false;
             }
@@ -438,9 +438,9 @@ namespace Testing4
             clsAccount aAccount = new clsAccount();
             Boolean Found = false;
             Boolean OK = true;
-            Int32 CustID = 1;
+            Int32 CustID = 2;
             Found = aAccount.Find(CustID);
-            if (aAccount.CustFName != "Jake")
+            if (aAccount.CustFName != "Jim")
             {
                 OK = false;
             }
@@ -463,7 +463,7 @@ namespace Testing4
             clsAccount aAccount = new clsAccount();
             Boolean Found = false;
             Boolean OK = true;
-            Int32 CustID = 1;
+            Int32 CustID = 2;
             Found = aAccount.Find(CustID);
             if (aAccount.NewsLetterSub != true)
             {
