@@ -14,7 +14,7 @@ namespace ClassLibrary
         private String mCustFName;
         private String mCustSName;
         private String mCustAddress;
-        private Int32 mCustPhone;
+        private long mCustPhone;
 
         public bool NewsLetterSub
         {
@@ -87,7 +87,7 @@ namespace ClassLibrary
             }
         }
 
-        public int CustPhone
+        public long CustPhone
         {
             get
             {
@@ -125,9 +125,6 @@ namespace ClassLibrary
         {
             String Error = "";
             DateTime DateTemp;
-            //Int32 custPhone;
-
-          
 
             if (CustAddress.Length > 50)
             {
@@ -140,64 +137,69 @@ namespace ClassLibrary
 
             if (CustFName.Length > 50)
             {
-                Error = Error + "The address must be equal to or less than 21 characters";
+                Error = Error + "The name must be equal to or less than 21 characters";
             }
             if (CustFName.Length == 0)
             {
-                Error = Error + "The address must be equal to or less than 21 characters";
+                Error = Error + "The name must be equal to or less than 21 characters";
             }
 
             if (CustSName.Length > 50)
             {
-                Error = Error + "The address must be equal to or less than 21 characters";
+                Error = Error + "The surname must be equal to or less than 21 characters";
             }
             if (CustSName.Length == 0)
             {
-                Error = Error + "The address must be equal to or less than 21 characters";
+                Error = Error + "The surname must be equal to or less than 21 characters";
             }
 
             if (CustPhone.Length > 11)
             {
-                Error = Error + "The address must be equal to or less than 21 characters";
+                Error = Error + "The phone must be equal to or less than 21 characters";
             }
 
             if (CustPhone.Length == 0) 
             {
-                Error = Error + "The address must be equal to or less than 21 characters";
+                Error = Error + "The phone must be equal to or less than 21 characters";
             }
 
-            try
+            /*  try
+              {
+                  DateTemp = DateTime.Parse(JoinDate);
+
+                  if (DateTemp < DateTime.Now.Date.AddDays(-1)) 
+                      {
+                          Error = Error + "The delivery date cannot be in the past : ";
+                      }
+                      if (DateTemp > DateTime.Now.Date.AddDays(1))
+                      {
+                          Error = Error + "The delivery date cannot be in the future by one year : ";
+                  }
+              }
+              catch
+              {
+                  Error = Error + "The delivery date was not a valid date : ";
+              }*/
+
+            //DateTemp = DateTime.Parse(JoinDate);
+
+            /*try
             {
                 DateTemp = Convert.ToDateTime(JoinDate);
-                DateTime DateMinusHund;
-                DateMinusHund = DateTime.Now.Date.AddYears(-100);
-                if (DateTemp <= DateMinusHund)
+
+                if (DateTemp > DateTime.Now.Date.AddDays(1))
                 {
-                    Error = Error + "The date cannot be 100 years or more the past : ";
+                    Error = Error + "The delivery date cannot be in the future : ";
+                }
+                if (DateTemp < DateTime.Now.Date.AddDays(-99))
+                {
+                    Error = Error + "The delivery date cannot be in the 99 years past : ";
                 }
             }
             catch
             {
-                Error = Error + "The date was not a valid date : ";
-            }
-
-            /*   try
-               {
-                   custPhone = Convert.ToInt32(CustPhone);
-
-                   if (custPhone < 100)
-                   {
-                       Error = Error + "The phone number cannot be less than 100 : ";
-                   }
-                   if (custPhone > 100000)
-                   {
-                       Error = Error + "The phone number cannot be more than 100,000 : ";
-                   }
-               }
-               catch
-               {
-                   Error = Error + "The phone number was not a valid number : ";
-               }*/
+                Error = Error + "The delivery date was not......";
+            }*/
             return Error;
         }
     }

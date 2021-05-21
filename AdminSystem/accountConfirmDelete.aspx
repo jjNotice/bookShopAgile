@@ -8,7 +8,15 @@
 </head>
 <body>
     <form id="form1" runat="server">
-        <div>
+        <div style="margin-left: 120px">
+            <asp:Label ID="lblRUSure" runat="server" Text="Are you sure you want to delete this?"></asp:Label>
+            <br />
+            <br />
+            <br />
+            <br />
+            <asp:Button ID="btnConfirm" runat="server" OnClick="btnConfirm_Click" Text="Confirm" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <asp:Button ID="btnCancel" runat="server" OnClick="btnCancel_Click" Text="Cancel" />
         </div>
     </form>
 </body>

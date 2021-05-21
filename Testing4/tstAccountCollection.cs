@@ -168,7 +168,7 @@ namespace Testing4
             TestItem.JoinDate = Convert.ToDateTime("2011-01-01");
             TestItem.CustFName = "Jennifer";
             TestItem.CustSName = "Carnel";
-            TestItem.CustAddress = "LE3 0DS";
+            TestItem.CustAddress = "LE30DS";
             TestItem.CustPhone = 0793213212;
             TestItem.CustID = 3;
 
@@ -253,14 +253,14 @@ namespace Testing4
 
             clsAccountCollection FilteredAccount = new clsAccountCollection();
             Boolean OK = true;
-            FilteredAccount.ReportByCustAddress("NN39GA");
+            FilteredAccount.ReportByCustAddress("LE30DS");
             if (FilteredAccount.count == 2)
             {
-                if (FilteredAccount.AccountList[0].CustID != 2)
+                if (FilteredAccount.AccountList[0].CustID != 3)
                 {
                     OK = false;
                 }
-                if (FilteredAccount.AccountList[1].CustID != 31)
+                if (FilteredAccount.AccountList[1].CustID != 4)
                 {
                     OK = false;
                 }

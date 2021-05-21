@@ -105,10 +105,10 @@ namespace AccountCollection
             DB.Execute("sproc_tblAccount_Delete");
         }
 
-        public void ReportByCustAddress(string CustAddress)
+        public void ReportByCustAddress(string CustAddress_)
         {
             clsDataConnection DB = new clsDataConnection();
-            DB.AddParameter("@CustAddress", CustAddress);
+            DB.AddParameter("@CustAddress", CustAddress_);
             DB.Execute("sproc_tblAccount_FilterByCustAddress");
             PopulateArray(DB);
         }
